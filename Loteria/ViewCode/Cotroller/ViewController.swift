@@ -8,9 +8,6 @@
 
 import UIKit
 
-
-
-
 enum GameType: String{
     case megaSena = "Mega-Sena"
     case quina = "Quina"
@@ -57,7 +54,6 @@ class ViewController: UIViewController {
     }
     
     @objc func selectedIndex() {
-        
         switch drawNumbersView.chooseGameModeSegmentedControl.selectedSegmentIndex {
             case  0:
                 showNumbers(for: .megaSena)
